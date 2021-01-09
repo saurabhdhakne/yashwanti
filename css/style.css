@@ -1634,3 +1634,17 @@ h6 {
     margin-left: 20%;
   }
 }
+
+.img1 {
+  position: fixed;
+  bottom: 10%;
+  right: 18px;
+  height: 45px;
+}
+
+.img2 {
+  position: fixed;
+  bottom: 18%;
+  right: 18px;
+  height: 45px;
+}
