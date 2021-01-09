@@ -1640,11 +1640,18 @@ h6 {
   bottom: 10%;
   right: 18px;
   height: 45px;
+  border-radius: 50%;
 }
-
+.img1:hover {
+  box-shadow: 0 2px 5px black;
+}
 .img2 {
   position: fixed;
   bottom: 18%;
   right: 18px;
   height: 45px;
+  border-radius: 50%;
+}
+.img2:hover {
+  box-shadow: 0 2px 5px black;
 }
