@@ -224,7 +224,11 @@ h6 {
   z-index: 0;
   opacity: 0.2;
 }
-
+.carousel-item img{
+  
+  opacity: 0.2;
+  
+}
 #content-wrapper {
   position: absolute;
   z-index: 1 !important;
