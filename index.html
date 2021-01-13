@@ -8,8 +8,8 @@
   <meta content="" name="description">
 
   <!-- Favicons -->
-  <link href="img/favicon.png" rel="icon">
-  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="img/apple-touch-icon.jpg" rel="icon">
+  <link href="img/apple-touch-icon.jpg" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,600,700,700i|Montserrat:300,400,500,600,700" rel="stylesheet">
@@ -26,28 +26,24 @@
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
+  <script>
+    function submited(){
+      alert("Form Submitted Successfully!");
+      document.getElementById("myForm").reset();
+
+    }
+  </script>
 
 </head>
 
 <body>
   <header id="header">
 
-    <div id="topbar">
-      <div class="container">
-        <div class="social-links">
-          <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-          <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-          <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-          <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-        </div>
-      </div>
-    </div>
-
     <div class="container">
 
       <div class="logo float-left">
         <!-- Uncomment below if you prefer to use an image logo -->
-        <h2 class="text-light"><a href="#intro" class="scrollto"><span class="yg" > <strong style="color:#2d2b46;"> Yashwanti Group </strong></span></a></h2>
+        <h2 class="text-light" style="line-height: .7em;"><a href="#intro" class="scrollto"><span class="yg" > <strong style="color:#4D4978;"> Yashwanti Group </strong></span><br><small style="font-size:0.5em">Since 1992</small></a></h2>
         <!-- <a href="#header" class="scrollto"><img src="img/logo.png" alt="" class="img-fluid"></a> -->
       </div>
 
@@ -58,77 +54,55 @@
           <li><a href="#services">Services</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#team">Team</a></li>
-          <!-- <li class="drop-down"><a href="">Drop Down</a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="drop-down"><a href="#">Drop Down 2</a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-              <li><a href="#">Drop Down 5</a></li>
-            </ul>
-          </li> -->
           <li><a href="#footer">Contact Us</a></li>
         </ul>
       </nav><!-- .main-nav -->
       
     </div>
-  </header><!-- #header -->
 
-  <!--==========================
-    Intro Section
-  ============================-->
-  <section id="intro" class="clearfix">
-    <div class="container-fluid d-flex h-100 " style="width: 100%;">
-      <div class="row justify-content-center  align-self-center">
-        <div class="col-md-12 intro-info  order-md-first order-first p-0 mt-5">
-          <div id="carouselExampleControls" class="carousel m-0 p-0 slide col-12" data-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img class="d-block w-100" src="img/c1.jpg" alt="First slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="img/c2.jpg" alt="Second slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="img/c3.jpg" alt="Third slide">
-              </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-              <span class="sr-only">Previous</span>
-            </a>
-            <div class="container" style="position: absolute;top: 10px;">
-              <div class="row">
-                <div class="col-md-5 offset-md-1 mt-0 intro-info order-md-first order-first">
-					<h2 style="text-shadow:0 2px 5px rgba(0,0,0,0.5)"> <span>Trusted legacy of <br> engineering excellence! </span></h2>	
-                  
-                  <div>
-                    &ensp;<a href="#about" class="btn-get-started scrollto">Get Started</a>
-                  </div>
-                </div>
-          
-                <div class="col-md-6 intro-img order-md-last order-last text-center">
-                  <img src="img/extra.gif"   alt="" class="img-fluid extra">
-                </div>
-              </div>
-            </div>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-              <span class="sr-only">Next</span>
-            </a>
+  </header><!-- #header -->
+  <section>
+  <div class="container-fluid p-0" style="margin-top: 100px;">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img class="d-block w-100" src="./img/c1.jpg"
+            alt="First slide">
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src="./img/c2.jpg"
+            alt="Second slide">
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src="./img/c3.jpg"
+            alt="Third slide">
+        </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+        <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+        <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+        <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+        <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <div class="container" id="new" >
+      <div class="row">
+        <div class="col-md-5 offset-md-1 mt-0 intro-info order-md-first order-first">
+        <h2 style="text-shadow:0 2px 5px rgba(f,f,f,1)"> <span>Trusted legacy of <br> engineering excellence! </span></h2>	
+          <div>
+            &ensp;<a href="#about" class="btn-get-started btn btn-info pr-5 pl-5 scrollto">Get Started</a>
           </div>
         </div>
   
+        <div class="col-md-6 intro-img order-md-last order-last text-center">
+          <!--<img src="img/extra.gif"   alt="" class="img-fluid extra">-->
         </div>
+      </div>
     </div>
-  </section><!-- #intro -->
-
+  </div>
+</section>
   <main id="main">
 
     <!--==========================
@@ -138,15 +112,15 @@
 
       <div class="container">
         <header class="section-header">
-          <h3>About Us</h3>
+          <h1 class="abtmb text-center">About Us</h1>
         </header>
-		<div class="row">
-			<div class="col-12">
-					<p style="text-align:justify;">Yashwanti Group is a National, diversified organisation of 5 major companies namely Yashwanti Transports, Tuljabhavani Cotton Trading company, Yashwanti Electricals, Yashwanti Agro, Yashwanti Infrastructures. Group was established in 1992 by Hon. B. R. GADHE & Hon R. R. GADHE. We deliver end-to-end solutions in 3 business segments, namely Engineering & Construction, Infrastructure and Energy. Developing megastructures and iconic landmarks, our dedicated workforce of over 135 people in over India is focused on sustainable development.
+		   <div class="row">
+		    	<div class="col-12">
+					<p style="text-align:justify;">Yashwanti Group is a National, diversified organisation of 5 major companies namely Yashwanti Transports, Tuljabhavani Cotton Trading company, Yashwanti Electricals, Yashwanti Agro, Yashwanti Infrastructures. Group was established in since 1992 by Hon. B. R. GADHE & Hon R. R. GADHE. We deliver end-to-end solutions in 3 business segments, namely Engineering & Construction, Infrastructure and Energy. Developing megastructures and iconic landmarks, our dedicated workforce of over 135 people in over India is focused on sustainable development.
 					</p>
 					<h2 class="text-center"> <strong>Our Companies</strong></h2>
-			</div>
-		</div>
+			   </div>
+		   </div>
 	
         <div class="row">
 
@@ -159,9 +133,9 @@
           <div class="col-lg-7 col-md-6">
             <div class="about-content">
               <h2>Yashwanti Electricals</h2>
-              <h3>Government Lisenced Contractor</h3>
+              <h3>Government Licenced Contractor</h3>
               <p style="text-align:justify;">Yashwanti Electricals is a Certified Government contractor Construction Company is
-                established in 2016 by Mr. M R Gadhe , a civil and Electrical engineering professional with an ambition to build the nation. His hard work combined with his passion for Excellences is reflected in every assignment undertaken by him delivering quality &amp; trust time and again.</p>
+                established in 2014 by Mr. M R Gadhe , a civil and Electrical engineering professional with an ambition to build the nation. His hard work combined with his passion for Excellences is reflected in every assignment undertaken by him delivering quality &amp; trust time and again.</p>
             </div>
           </div>
         </div>
@@ -177,7 +151,7 @@
             <div class="col-lg-7 col-md-6">
               <div class="about-content">
                 <h2>Yashwanti Infrastructures</h2>
-                <h3>Government Lisenced Contractor</h3>
+                <h3>Government Licenced Contractor</h3>
                 <p style="text-align:justify;">We are an infrastructure construction and Development Company, with operations diversified across Roads, buildings and factories, energy infrastructure and water and irrigation verticals of the infrastructure sector. we have established a track record in executing majority of our infrastructure construction and development projects in a timely manner. Pursuant to our executional experience, we have been able to develop and establish competencies in the verticals in which we operate.</p>
               </div>
             </div>
@@ -194,7 +168,7 @@
 
           <div class="col-lg-6">
             <div class="why-us-img">
-              <img src="img/st1.jpg" alt="" class="pt-4 img-fluid">
+              <img src="img/st1.jpg" alt="" class="pt-0 img-fluid">
             </div>
           </div>
 
@@ -204,26 +178,6 @@
               <p style="text-align:justify;">
                 While we work for governments and commercial customers, our projects have helped grow local economies and improve the quality of life for communities and people across India. Time and again our work has demonstrated that the only limits on human achievement are those that we place on ourselves. However, turnover and size are only relevant to our clients to show that we are large enough for the task. We never want to be the biggest - only the best.
               </p>
-
-              <!-- Future Purpose 
-              <div class="features wow bounceInUp clearfix">
-                <i class="fa fa-diamond" style="color: #f058dc;"></i>
-                <h4>Corporis dolorem</h4>
-                <p>Commodi quia voluptatum. Est cupiditate voluptas quaerat officiis ex alias dignissimos et ipsum. Soluta at enim modi ut incidunt dolor et.</p>
-              </div>
-
-              <div class="features wow bounceInUp clearfix">
-                <i class="fa fa-object-group" style="color: #ffb774;"></i>
-                <h4>Eum ut aspernatur</h4>
-                <p>Molestias eius rerum iusto voluptas et ab cupiditate aut enim. Assumenda animi occaecati. Quo dolore fuga quasi autem aliquid ipsum odit. Perferendis doloremque iure nulla aut.</p>
-              </div>
-              
-              <div class="features wow bounceInUp clearfix">
-                <i class="fa fa-language" style="color: #589af1;"></i>
-                <h4>Voluptates dolores</h4>
-                <p>Voluptates nihil et quis omnis et eaque omnis sint aut. Ducimus dolorum aspernatur. Totam dolores ut enim ullam voluptas distinctio aut.</p>
-              </div>
-              -->
             </div>
 
           </div>
@@ -258,7 +212,7 @@
 				  <li>Load Calculation</li> 
 				  <li> All Electricals system Design and Planning </li> 
 				  <li> New LT/HT 3Phase/ 1Phase Connection   </li>
-				  <li> Lissinging of all electrical Department </li>
+				  <li> Lessoning of all electrical Department </li>
 				  <li> Estimating and Costing / Tender Working </li> 
 			  </ul>
 			  </p>
@@ -320,7 +274,7 @@
 			  <ul class="text-left">
 					<li> Transformer Installation </li>
 					<li> 11 KV/ 22KV /33KV Substations </li>
-					<li> DP Stretcher </li>
+					<li> DP Structure </li>
 					<li> LT/ HT Panels </li>
 					
 				</ul>
@@ -394,7 +348,7 @@
           </div>
 
           <div class="col-lg-3 col-6 text-center">
-            <span data-toggle="counter-up">18</span>
+            <span data-toggle="counter-up">130</span>
             <p>Hard Workers</p>
           </div>
   
@@ -403,86 +357,6 @@
       </div>
     </section><!-- #services -->
 
-    <!--==========================
-      Why Us Section
-    ============================-->
-   <!-- <section id="why-us" class="wow fadeIn">
-      <div class="container-fluid">
-        
-        <header class="section-header">
-          <h3>Why choose us?</h3>
-          <p>We have Civil and Electrical Engineering professionasl with an ambition to build the nation.</p>
-        </header>
-
-        <div class="row">
-
-          <div class="col-lg-6">
-            <div class="why-us-img">
-              <img src="img/why-us.jpg" alt="" class="img-fluid">
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <div class="why-us-content">
-              <p>Our diverse portfolio encompasses Street Light Work, HT /LT line work, Industrial electrification and commercial Building Electrification, Building Projects. We currently have projects in dozens of locations across India, No matter how challenging a project or how remote its location. That’s because we bring an unmatched combination of knowledge, skill, experience, and customer commitment to every job.</p>
-              <p>
-                While we work for governments and commercial customers, our projects have helped grow local economies and improve the quality of life for communities and people across India. Time and again our work has demonstrated that the only limits on human achievement are those that we place on ourselves. However, turnover and size are only relevant to our clients to show that we are large enough for the task. We never want to be the biggest - only the best.
-              </p>
-
-            Future Purpose 
-              <div class="features wow bounceInUp clearfix">
-                <i class="fa fa-diamond" style="color: #f058dc;"></i>
-                <h4>Corporis dolorem</h4>
-                <p>Commodi quia voluptatum. Est cupiditate voluptas quaerat officiis ex alias dignissimos et ipsum. Soluta at enim modi ut incidunt dolor et.</p>
-              </div>
-
-              <div class="features wow bounceInUp clearfix">
-                <i class="fa fa-object-group" style="color: #ffb774;"></i>
-                <h4>Eum ut aspernatur</h4>
-                <p>Molestias eius rerum iusto voluptas et ab cupiditate aut enim. Assumenda animi occaecati. Quo dolore fuga quasi autem aliquid ipsum odit. Perferendis doloremque iure nulla aut.</p>
-              </div>
-              
-              <div class="features wow bounceInUp clearfix">
-                <i class="fa fa-language" style="color: #589af1;"></i>
-                <h4>Voluptates dolores</h4>
-                <p>Voluptates nihil et quis omnis et eaque omnis sint aut. Ducimus dolorum aspernatur. Totam dolores ut enim ullam voluptas distinctio aut.</p>
-              </div>
-             
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-      <div class="container">
-        <div class="row counters">
-
-          <div class="col-lg-3 col-6 text-center">
-            <span data-toggle="counter-up">274</span>
-            <p>Clients</p>
-          </div>
-
-          <div class="col-lg-3 col-6 text-center">
-            <span data-toggle="counter-up">421</span>
-            <p>Projects</p>
-          </div>
-
-          <div class="col-lg-3 col-6 text-center">
-            <span data-toggle="counter-up">1,364</span>
-            <p>Hours Of Support</p>
-          </div>
-
-          <div class="col-lg-3 col-6 text-center">
-            <span data-toggle="counter-up">18</span>
-            <p>Hard Workers</p>
-          </div>
-  
-        </div>
-
-      </div>
-    </section> -->
 
     <!--==========================
       Call To Action Section
@@ -501,50 +375,6 @@
 
       </div>
     </section><!-- #call-to-action -->
-
-    <!-- ==========================
-      Features Section
-    ============================-->
-    <!-- <section id="features">
-      <div class="container">
-
-        <div class="row feature-item">
-          <div class="col-lg-6 wow fadeInUp">
-            <img src="img/features-1.svg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-6 wow fadeInUp pt-5 pt-lg-0">
-            <h4>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h4>
-            <p>
-              Ipsum in aspernatur ut possimus sint. Quia omnis est occaecati possimus ea. Quas molestiae perspiciatis occaecati qui rerum. Deleniti quod porro sed quisquam saepe. Numquam mollitia recusandae non ad at et a.
-            </p>
-            <p>
-              Ad vitae recusandae odit possimus. Quaerat cum ipsum corrupti. Odit qui asperiores ea corporis deserunt veritatis quidem expedita perferendis. Qui rerum eligendi ex doloribus quia sit. Porro rerum eum eum.
-            </p>
-          </div>
-        </div>
-
-        <div class="row feature-item mt-5 pt-5">
-          <div class="col-lg-6 wow fadeInUp order-1 order-lg-2">
-            <img src="img/features-2.svg" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1">
-            <h4>Neque saepe temporibus repellat ea ipsum et. Id vel et quia tempora facere reprehenderit.</h4>
-            <p>
-             Delectus alias ut incidunt delectus nam placeat in consequatur. Sed cupiditate quia ea quis. Voluptas nemo qui aut distinctio. Cumque fugit earum est quam officiis numquam. Ducimus corporis autem at blanditiis beatae incidunt sunt. 
-            </p>
-            <p>
-              Voluptas saepe natus quidem blanditiis. Non sunt impedit voluptas mollitia beatae. Qui esse molestias. Laudantium libero nisi vitae debitis. Dolorem cupiditate est perferendis iusto.
-            </p>
-            <p>
-              Eum quia in. Magni quas ipsum a. Quis ex voluptatem inventore sint quia modi. Numquam est aut fuga mollitia exercitationem nam accusantium provident quia.
-            </p>
-          </div>
-          
-        </div>
-
-      </div>
-    </section>#about -->
 
     <!--==========================
       Portfolio Section
@@ -573,7 +403,7 @@
 		  <div class="portfolio-wrap">
               <img src="img/portfolio/maintenace.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4><a href="">Electrical Annual maintenance Contract of Non Residential buildings at Savitrybai Phule Pune University Pune. In 2020</a></h4>
+                <h4><a>Electrical Annual maintenance Contract of Non Residential buildings at Savitrybai Phule Pune University Pune. In 2020</a></h4>
                 <p>SPPU</p>
                 <div>
                   <a href="img/portfolio/maintenace.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 3" title="Preview"><i class="ion ion-eye"></i></a>
@@ -584,9 +414,9 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.1s">
 		  <div class="portfolio-wrap">
-              <img src="img/portfolio/street-lamps-1.jpg" class="img-fluid" alt="">
+              <img src="img/portfolio/ranway light.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4><a href="">Runway Lighting and cabling work at Air Force Station, Loahgaon, Pune. In 2020</a></h4>
+                <h4><a>Runway Lighting and cabling work at Air Force Station, Loahgaon, Pune. In 2020</a></h4>
                 <p>Air Force Runway</p>
                 <div>
                   <a href="img/portfolio/street-lamps-1.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 1" title="Preview"><i class="ion ion-eye"></i></a>
@@ -597,9 +427,9 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app" data-wow-delay="0.2s">
 		  <div class="portfolio-wrap">
-              <img src="img/portfolio/cat-sub-auto-sys-01.jpg" class="img-fluid" alt="">
+              <img src="img/portfolio/data centar.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4><a href="">Electrification of Data Centre at TATA consultancy, Dighi, Pune.  In 2020</a></h4>
+                <h4><a>Electrification of Data Centre at TATA consultancy, Dighi, Pune.  In 2020</a></h4>
                 <p>Electrification Work</p>
                 <div>
                   <a href="img/portfolio/cat-sub-auto-sys-01.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 1" title="Preview"><i class="ion ion-eye"></i></a>
@@ -612,7 +442,7 @@
 		  <div class="portfolio-wrap">
               <img src="img/portfolio/ups.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4><a href="#">UPS installation at IITM Pashan Pune in 2019</a></h4>
+                <h4><a>UPS installation at IITM Pashan Pune in 2019</a></h4>
                 <p>UPS Installation</p>
                 <div>
                   <a href="img/portfolio/ups.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 3" title="Preview"><i class="ion ion-eye"></i></a>
@@ -625,7 +455,7 @@
             <div class="portfolio-wrap">
               <img src="img/portfolio/substation panel.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4><a href="">Renovation and upgradation of  22 KVA substation at IITM Pashan, Pune in 2018</a></h4>
+                <h4><a>Renovation and upgradation of  22 KVA substation at IITM Pashan, Pune in 2018</a></h4>
                 <p>Substation Upgradation</p>
                 <div>
                   <a href="img/portfolio/substation panel.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 2" title="Preview"><i class="ion ion-eye"></i></a>
@@ -636,9 +466,9 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app" data-wow-delay="0.2s">
             <div class="portfolio-wrap">
-              <img src="img/portfolio/card2.jpg" class="img-fluid" alt="">
+              <img src="img/portfolio/street-lamps-1.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4><a href="">Installation and maintenance of Street Light work at NCL Pashan, Pune in 2018</a></h4>
+                <h4><a>Installation and maintenance of Street Light work at NCL Pashan, Pune in 2018</a></h4>
                 <p>Street Light Maintenance</p>
                 <div>
                   <a href="img/portfolio/card2.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 2" title="Preview"><i class="ion ion-eye"></i></a>
@@ -651,7 +481,7 @@
             <div class="portfolio-wrap">
               <img src="img/portfolio/toll plaza.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4><a href="">Internal and External Electrification of Toll plaza at Dumbarwadi NH -222 Project of NHAI By V M Matere infr(i) Pvt Ltd.  In 2018</a></h4>
+                <h4><a>Internal and External Electrification of Toll plaza at Dumbarwadi NH -222 Project of NHAI By V M Matere infr(i) Pvt Ltd.  In 2018</a></h4>
                 <p>Electrification</p>
                 <div>
                   <a href="img/portfolio/toll plaza.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 3" title="Preview"><i class="ion ion-eye"></i></a>
@@ -664,7 +494,7 @@
             <div class="portfolio-wrap">
               <img src="img/portfolio/_road-street-light.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4><a href="">Resat Area and Bus bay lighting at NH-222 Project of NHAI By V M Matere infr(i) Pvt Ltd.  in 2017</a></h4>
+                <h4><a>Resat Area and Bus bay lighting at NH-222 Project of NHAI By V M Matere infr(i) Pvt Ltd.  in 2017</a></h4>
                 <p>Street Light</p>
                 <div>
                   <a href="img/portfolio/_road-street-light.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 2" title="Preview"><i class="ion ion-eye"></i></a>
@@ -678,7 +508,7 @@
             <div class="portfolio-wrap">
               <img src="img/portfolio/HTLTline.jpeg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4><a >LT/HT line Shifting MSEDCL by NHAI NH -222.  in 2016 </a></h4>
+                <h4><a>LT/HT line Shifting MSEDCL by NHAI NH -222.  in 2016 </a></h4>
                 <p>LT/HT Line</p>
                 <div>
                   <a href="img/portfolio/HTLTline.jpeg.jpg" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
@@ -686,73 +516,23 @@
               </div>
             </div>
           </div>
-
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+                    <img src="img/portfolio/cat-sub-auto-sys-01.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                      <h4><a>And Many More</a></h4>
+                      <p></p>
+                      <div>
+                        <a class="link-preview"><i class="ion ion-plus"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+      
         </div>
 
       </div>
     </section><!-- #portfolio -->
-
-    <!--==========================
-      Clients Section
-    ============================-->
-    <!-- <section id="testimonials">
-      <div class="container">
-
-        <header class="section-header">
-          <h3>Testimonials</h3>
-        </header>
-
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
-
-            <div class="owl-carousel testimonials-carousel wow fadeInUp">
-    
-              <div class="testimonial-item">
-                <img src="img/testimonial-1.jpg" class="testimonial-img" alt="">
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
-                <p>
-                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                </p>
-              </div>
-    
-              <div class="testimonial-item">
-                <img src="img/testimonial-2.jpg" class="testimonial-img" alt="">
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
-                <p>
-                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                </p>
-              </div>
-    
-              <div class="testimonial-item">
-                <img src="img/testimonial-3.jpg" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
-                <p>
-                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                </p>
-              </div>
-    
-              <div class="testimonial-item">
-                <img src="img/testimonial-4.jpg" class="testimonial-img" alt="">
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
-                <p>
-                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                </p>
-              </div>
-
-            </div>
-
-          </div>
-        </div>
-
-
-      </div>
-    </section>
-     -->
-    <!-- #testimonials -->
 
     <!--==========================
       Team Section
@@ -836,7 +616,6 @@
         <header class="section-header">
           <h3>Our Clients</h3>
         </header>
-
         <div class="text-center">
           <img height="100px" src="img/clients/cl1.jpg" alt="">
           <img height="100px" src="img/clients/cl2.jpg" alt="">
@@ -846,89 +625,20 @@
           <img height="100px" src="img/clients/cl6.jpg" alt="">
           <img height="100px" src="img/clients/cl7.jpg" alt="">
           <img height="100px" src="img/clients/cl8.jpg" alt="">
+          <img height="100px" src="img/clients/cl9.jpg" alt="">
+          <img height="100px" src="img/clients/cl10.jpg" alt="">
+          <img height="100px" src="img/clients/cl11.jpg" alt="">
+          <img height="100px" src="img/clients/cl12.jpg" alt="">
+          <img height="100px" src="img/clients/cl13.jpg" alt="">
+          <img height="100px" src="img/clients/cl14.jpg" alt="">
+          <img height="100px" src="img/clients/cl15.jpg" alt="">
+          <img height="100px" src="img/clients/cl16.jpg" alt="">
+          <img height="100px" src="img/clients/cl17.jpg" alt="">
+          <img height="100px" src="img/clients/cl18.jpg" alt="">
+          <img height="100px" src="img/clients/cl19.jpg" alt="">
         </div>
-
       </div>
     </section><!-- #clients -->
-
-
-    <!--==========================
-      Pricing Section
-    ============================-->
-  
-    
-    <!-- #pricing -->
-
-    <!--==========================
-      Frequently Asked Questions Section
-    ============================
-    <section id="faq">
-      <div class="container">
-        <header class="section-header">
-          <h3>Frequently Asked Questions</h3>
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
-        </header>
-
-        <ul id="faq-list" class="wow fadeInUp">
-          <li>
-            <a data-toggle="collapse" class="collapsed" href="#faq1">Non consectetur a erat nam at lectus urna duis? <i class="ion-android-remove"></i></a>
-            <div id="faq1" class="collapse" data-parent="#faq-list">
-              <p>
-                Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
-              </p>
-            </div>
-          </li>
-
-          <li>
-            <a data-toggle="collapse" href="#faq2" class="collapsed">Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque? <i class="ion-android-remove"></i></a>
-            <div id="faq2" class="collapse" data-parent="#faq-list">
-              <p>
-                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
-              </p>
-            </div>
-          </li>
-
-          <li>
-            <a data-toggle="collapse" href="#faq3" class="collapsed">Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi? <i class="ion-android-remove"></i></a>
-            <div id="faq3" class="collapse" data-parent="#faq-list">
-              <p>
-                Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
-              </p>
-            </div>
-          </li>
-
-          <li>
-            <a data-toggle="collapse" href="#faq4" class="collapsed">Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla? <i class="ion-android-remove"></i></a>
-            <div id="faq4" class="collapse" data-parent="#faq-list">
-              <p>
-                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
-              </p>
-            </div>
-          </li>
-
-          <li>
-            <a data-toggle="collapse" href="#faq5" class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="ion-android-remove"></i></a>
-            <div id="faq5" class="collapse" data-parent="#faq-list">
-              <p>
-                Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
-              </p>
-            </div>
-          </li>
-
-          <li>
-            <a data-toggle="collapse" href="#faq6" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="ion-android-remove"></i></a>
-            <div id="faq6" class="collapse" data-parent="#faq-list">
-              <p>
-                Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Nibh tellus molestie nunc non blandit massa enim nec.
-              </p>
-            </div>
-          </li>
-
-        </ul>
-
-      </div>
-    </section><!-- #faq -->
-
   </main>
 
   <!--==========================
@@ -939,13 +649,14 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1920563.656459844!2d73.41863567332352!3d19.9201528191857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdb9918827afd05%3A0x37bd87a2fccab4ce!2sWisdom%20IT%20Solutions!5e0!3m2!1sen!2sin!4v1610159683528!5m2!1sen!2sin" width="100%" height="430" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.235840087053!2d73.88295481489475!3d18.653409987331763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c70a6516d0d7%3A0x53339267bff0185b!2sYashwanti%20Electricals!5e0!3m2!1sen!2sin!4v1610331628404!5m2!1sen!2sin" width="100%" height="430" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
           </div>
           <div class="col-lg-6">
             <div class="form">       
               <h4>Send us a message</h4>
               <p>Have any query? Do not hesitate to contact us.</p>
-              <form action="insert.php" method="post" role="form" class="contactForm">
+              <form action="insert.php" method="post" id="myForm" onsubmit="return submited()" role="form" class="contactForm">
                 <div class="form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                   <div class="validation"></div>
@@ -978,10 +689,10 @@
           <div class="footer-info">
             <h3>Yashwanti Group</h3>
             <p class="text-justify">Yashwanti Group is a National, diversified organisation of 5 major companies namely Yashwanti Transports, Tuljabhavani Cotton Trading company, Yashwanti Electricals, Yashwanti Agro, Yashwanti Infrastructures.</p>
-			<p>GST No.: <b>27AVZPF4484G1ZX</b>
-			<br>PAN NO.: <b>AVZPF4484G</b>
-			<br>REGISTRATION MAHARASTRA CONTACTOR NO.: <b>43587</b>
-			<br>MAHARASTRA SUPERVIESR NO.: <b>56804</b></p>
+            <p>GST No.: <b>27AVZPF4484G1ZX</b>
+            <br>PAN NO.: <b>AVZPF4484G</b>
+            <br>REGISTRATION MAHARASTRA CONTACTOR NO.: <b>43587</b>
+            <br>MAHARASTRA SUPERVIESR NO.: <b>56804</b></p>
           </div>
         </div>
         <div class="col-sm-3">
@@ -1004,7 +715,7 @@
               Azadnagar, Chowiswadi, Charoli,<br>
               Charoli Rd, Nr. Krishna Dairy,<br>
               PCMC, Pune - 412105<br>
-              <strong>Phone:</strong> +91 999 899 3471<br>
+              <strong>Phone:</strong> +91 888 899 3471<br>
               <strong>Email:</strong> yashwantielectricals@gmail.com<br>
             </p>
           </div>
